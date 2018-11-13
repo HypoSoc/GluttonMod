@@ -26,7 +26,7 @@
   "InfiniteFamine":{
     "NAME": "Infinite Famine",
     "FLAVOR": "must... feed...",
-    "DESCRIPTIONS": ["Replaces Eternal Hunger. At the start of your turn, lose #b2 HP and draw #b2 extra card."]
+    "DESCRIPTIONS": ["Replaces Eternal Hunger. At the start of your turn, lose #b2 HP and draw #b2 extra cards."]
   },
 
   "Lollipop":{
