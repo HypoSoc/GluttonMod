@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import gluttonmod.GluttonMod;
 
 public class FeverVisionsPower extends AbstractGluttonPower {
-    public static final String POWER_ID = "FeverVisions";
+    public static final String POWER_ID = "Glutton:FeverVisions";
     public static final String NAME = "Fever Visions";
     public static final String[] DESCRIPTIONS = {"At the start of your turn, if you have a debuff, draw #b",
             "card.", "cards."};

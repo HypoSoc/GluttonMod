@@ -8,7 +8,7 @@ import gluttonmod.GluttonMod;
 import gluttonmod.actions.MakeEchoAction;
 
 public class NostalgiaPower extends AbstractGluttonPower {
-    public static final String POWER_ID = "Nostalgia";
+    public static final String POWER_ID = "Glutton:Nostalgia";
     public static final String NAME = "Nostalgia";
     public static final String[] DESCRIPTIONS = new String[]{ "Whenever you exhaust a non-ethereal Skill or Attack, create",
             "an echo of it.", "echoes of it."};

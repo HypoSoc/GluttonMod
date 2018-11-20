@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import gluttonmod.GluttonMod;
 
 public class MiseryPower extends AbstractGluttonPower {
-    public static final String POWER_ID = "Misery";
+    public static final String POWER_ID = "Glutton:Misery";
     public static final String NAME = "Misery";
     public static final String[] DESCRIPTIONS = new String[]{ "Whenever you lose HP, deal", "damage to ALL enemies."};
     public static final String IMG = "powers/misery.png";

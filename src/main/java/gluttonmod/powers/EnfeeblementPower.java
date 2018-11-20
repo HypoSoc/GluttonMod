@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import gluttonmod.GluttonMod;
 
 public class EnfeeblementPower extends AbstractGluttonPower implements OnReceivePowerPower {
-    public static final String POWER_ID = "Enfeeblement";
+    public static final String POWER_ID = "Glutton:Enfeeblement";
     public static final String NAME = "Enfeeblement";
     public static final String[] DESCRIPTIONS = {"Whenever you gain a debuff, deal #b",
             " damage to a random enemy."};

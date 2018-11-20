@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import gluttonmod.GluttonMod;
 
 public class BleedPower extends AbstractGluttonPower {
-    public static final String POWER_ID = "Bleed";
+    public static final String POWER_ID = "Glutton:Bleed";
     public static final String NAME = "Bleed";
     public static final String[] DESCRIPTIONS = {
             "At the start of your turn, lose #b",

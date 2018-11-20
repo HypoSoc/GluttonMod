@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.vfx.combat.BiteEffect;
 
 public class Bite_Glutton extends AbstractGluttonCard
 {
-    public static final String ID = "Bite_Glutton";
+    public static final String ID = "Bite";
     public static final String NAME = "Bite";
     public static final String DESCRIPTION = "Deal !D! damage. NL Heal !M! HP.";
     public static final String IMG_PATH = "cards/bite.png";

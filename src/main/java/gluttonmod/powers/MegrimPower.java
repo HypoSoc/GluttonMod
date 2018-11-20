@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import gluttonmod.GluttonMod;
 
 public class MegrimPower extends AbstractGluttonPower {
-    public static final String POWER_ID = "Megrim";
+    public static final String POWER_ID = "Glutton:Megrim";
     public static final String NAME = "Megrim";
     public static final String[] DESCRIPTIONS = new String[]{ "Whenever you draw a card, deal #b", " damage to a random enemy."};
     public static final String IMG = "powers/megrim.png";

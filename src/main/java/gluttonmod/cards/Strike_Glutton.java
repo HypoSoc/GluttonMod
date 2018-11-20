@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class Strike_Glutton extends AbstractGluttonCard
 {
-    public static final String ID = "Strike_Glutton";
+    public static final String ID = "Strike";
     public static final String NAME = "Strike";
     public static final String DESCRIPTION = "Deal !D! damage.";
     public static final String IMG_PATH = "cards/strike.png";

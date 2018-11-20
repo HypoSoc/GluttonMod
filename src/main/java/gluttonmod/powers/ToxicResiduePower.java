@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.powers.PoisonPower;
 import gluttonmod.GluttonMod;
 
 public class ToxicResiduePower extends AbstractGluttonPower {
-    public static final String POWER_ID = "ToxicResidue";
+    public static final String POWER_ID = "Glutton:ToxicResidue";
     public static final String NAME = "Toxic Residue";
     public static final String[] DESCRIPTIONS = new String[]{ "Whenever a card is #yExhausted, apply #b",
             " #yPoison to a random enemy."};

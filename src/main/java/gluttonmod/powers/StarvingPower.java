@@ -8,7 +8,7 @@ import gluttonmod.GluttonMod;
 import gluttonmod.cards.HungerPang;
 
 public class StarvingPower extends AbstractGluttonPower {
-    public static final String POWER_ID = "Starving";
+    public static final String POWER_ID = "Glutton:Starving";
     public static final String NAME = "Starving";
     public static final String[] DESCRIPTIONS = {
             "At the start of your turn, shuffle #b",

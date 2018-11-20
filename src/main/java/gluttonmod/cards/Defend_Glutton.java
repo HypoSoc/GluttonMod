@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class Defend_Glutton extends AbstractGluttonCard
 {
-    public static final String ID = "Defend_Glutton";
+    public static final String ID = "Defend";
     public static final String NAME = "Defend";
     public static final String DESCRIPTION = "Gain !B! block.";
     public static final String IMG_PATH = "cards/defend.png";

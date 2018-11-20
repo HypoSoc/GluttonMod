@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class Feed_Glutton extends AbstractGluttonCard
 {
-    public static final String ID = "Feed_Glutton";
+    public static final String ID = "Feed";
     public static final String NAME = "Feed";
     public static final String DESCRIPTION = "Deal !D! damage. NL If this kills a NL non-minion enemy, NL raise your Max HP by !M!. Exhaust.";
     public static final String IMG_PATH = "cards/feed.png";
