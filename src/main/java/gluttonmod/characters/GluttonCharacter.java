@@ -90,7 +90,7 @@ public class GluttonCharacter extends CustomPlayer {
 
     @Override
     public CharSelectInfo getLoadout() {
-        return new CharSelectInfo("The Glutton", "A tormented being seeking to NL end its misery.",
+        return new CharSelectInfo("The Glutton", "A tormented being seeking to NL end its misery. NL Consumes its own life force to hunt its next meal.",
                 120, 120, 0, 99,
                 5, this, getStartingRelics(), getStartingDeck(), false);
     }

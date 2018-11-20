@@ -4,7 +4,7 @@ Added 5 new cards: Enfeeblement, Malignancy, Reminisce, Starvation Mode, and Tre
 
 Added new Uncommon Relic: Half-Eaten Sandwich
 
-Buffer Treat Slightly
+Buffed Treat Slightly
 
 Added STSLib as a dependency
 
