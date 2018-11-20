@@ -9,4 +9,6 @@ The Glutton begins with the Relic **Eternal Hunger** which lets him draw an addi
 BaseMod, ModTheSpire, and STSLib are all required to run GluttonMod
 
 # Credits
+Thanks RedDye05 for the character button.
+
 I would like to thank the developers of Slay the Spire for making such an amazing game, as well as the mod community for their support and providing such helpful modding resources.
