@@ -184,6 +184,7 @@ public class GluttonMod implements EditCharactersSubscriber, EditRelicsSubscribe
         BaseMod.addCard(new Megrim());
         BaseMod.addCard(new Nostalgia());
         BaseMod.addCard(new StarvationMode());
+        BaseMod.addCard(new Vitality());
     }
 
     @Override
