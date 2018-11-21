@@ -12,8 +12,8 @@ public class Malignancy extends AbstractGluttonCard
 {
     public static final String ID = "Malignancy";
     public static final String NAME = "Malignancy";
-    public static final String DESCRIPTION = "Unplayable. NL If this card is exhausted, gain !M! Intangible.";
-    public static final String UPGRADE_DESCRIPTION = "Unplayable. NL Retain. NL If this card is exhausted, gain !M! Intangible.";
+    public static final String DESCRIPTION = "Unplayable. NL If this card is Exhausted, gain !M! Intangible.";
+    public static final String UPGRADE_DESCRIPTION = "Unplayable. NL Retain. NL If this card is Exhausted, gain !M! Intangible.";
     public static final String CANT_PLAY = "I can't play this card.";
     public static final String IMG_PATH = "cards/malignancy.png";
 

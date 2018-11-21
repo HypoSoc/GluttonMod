@@ -11,10 +11,12 @@ import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
 public class ObsessiveGreed extends AbstractGluttonCard
 {
     private static final int PRICE = 30;
+    private static final int UPGRADED_PRICE = 50;
 
     public static final String ID = "ObsessiveGreed";
     public static final String NAME = "Obsessive Greed";
     public static final String DESCRIPTION = "Pay " + PRICE + " Gold. NL Gain !M! Intangible.";
+    public static final String UPGRADED_DESCRIPTION = "Pay " + UPGRADED_PRICE + " Gold. NL Gain !M! Intangible.";
     public static final String CANT_PLAY = "I can't afford this card.";
     public static final String IMG_PATH = "cards/obsessivegreed.png";
 
@@ -36,7 +38,10 @@ public class ObsessiveGreed extends AbstractGluttonCard
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new SpendGoldCombatAction(PRICE));
+        int price = PRICE;
+        if(this.upgraded)
+            price = UPGRADED_PRICE;
+        AbstractDungeon.actionManager.addToBottom(new SpendGoldCombatAction(price));
         AbstractDungeon.actionManager.addToBottom(
                 new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, this.magicNumber), this.magicNumber));
     }
@@ -47,7 +52,10 @@ public class ObsessiveGreed extends AbstractGluttonCard
         if (!canUse) {
             return false;
         }
-        if(p.gold < PRICE){
+        int price = PRICE;
+        if(this.upgraded)
+            price = UPGRADED_PRICE;
+        if(p.gold < price){
             this.cantUseMessage = CANT_PLAY;
             return false;
         }
@@ -65,6 +73,8 @@ public class ObsessiveGreed extends AbstractGluttonCard
         {
             upgradeName();
             upgradeMagicNumber(UPGRADE_BONUS);
+            this.rawDescription = UPGRADED_DESCRIPTION;
+            initializeDescription();
         }
     }
 }

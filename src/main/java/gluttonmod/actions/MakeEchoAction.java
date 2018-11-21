@@ -45,7 +45,8 @@ public class MakeEchoAction extends AbstractGameAction {
         card.isEthereal = true;
         AlwaysRetainField.alwaysRetain.set(card, false);
         card.retain = false;
-        card.updateCost(-1*this.discount);
+        if(card.cost >= 0 && this.discount>0)
+            card.updateCost(-1*this.discount);
         return card;
     }
 

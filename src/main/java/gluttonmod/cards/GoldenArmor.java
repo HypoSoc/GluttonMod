@@ -7,11 +7,9 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class GoldenArmor extends AbstractGluttonCard {
-    public static final int EXCHANGE = 15;
-
     public static final String ID = "GoldenArmor";
     public static final String NAME = "Golden Armor";
-    public static final String DESCRIPTION = "Gain 1 Block for every " + EXCHANGE + " gold you have.";
+    public static final String DESCRIPTION = "Gain 1 Block for every !M! gold you have.";
     public static final String EXTENDED_DESCRIPTION = " NL (Gain !B! block.)";
     public static final String IMG_PATH = "cards/goldenarmor.png";
 
@@ -21,13 +19,16 @@ public class GoldenArmor extends AbstractGluttonCard {
 
     private static final int COST = 2;
     private static final int BLOCK = 0;
-    private static final int UPGRADE_COST = 1;
+    private static final int MAGIC = 15;
+    private static final int UPGRADE_MAGIC = -3;
 
     public GoldenArmor()
     {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 
         this.baseBlock = BLOCK;
+        this.baseMagicNumber = MAGIC;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m)
@@ -44,7 +45,7 @@ public class GoldenArmor extends AbstractGluttonCard {
 
     public void applyPowers()
     {
-        this.baseBlock = AbstractDungeon.player.gold / EXCHANGE;
+        this.baseBlock = AbstractDungeon.player.gold / this.magicNumber;
         super.applyPowers();
         this.rawDescription = (DESCRIPTION + EXTENDED_DESCRIPTION);
         initializeDescription();
@@ -55,7 +56,8 @@ public class GoldenArmor extends AbstractGluttonCard {
         if (!this.upgraded)
         {
             upgradeName();
-            upgradeBaseCost(UPGRADE_COST);
+            upgradeMagicNumber(UPGRADE_MAGIC);
+            this.baseBlock = AbstractDungeon.player.gold / this.magicNumber;
         }
     }
 }
