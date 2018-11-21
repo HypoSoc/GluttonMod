@@ -169,6 +169,7 @@ public class GluttonMod implements EditCharactersSubscriber, EditRelicsSubscribe
         //Rare
         //Attacks
         BaseMod.addCard(new Avarice());
+        BaseMod.addCard(new EatAlive());
         BaseMod.addCard(new Excrescence());
         BaseMod.addCard(new FragileMight());
         BaseMod.addCard(new Reminisce());
