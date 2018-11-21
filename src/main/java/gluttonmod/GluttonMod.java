@@ -2,7 +2,6 @@ package gluttonmod;
 
 import basemod.BaseMod;
 import basemod.interfaces.*;
-import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
@@ -11,7 +10,6 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -50,7 +48,7 @@ public class GluttonMod implements EditCharactersSubscriber, EditRelicsSubscribe
     private static final String CHAR_BUTTON = "charSelect/button.png";
     private static final String CHAR_PORTRAIT = "charSelect/portrait.png";
 
-    public static final String getResourcePath(String resource) {
+    public static String getResourcePath(String resource) {
         return ASSETS_FOLDER + "/" + resource;
     }
 
