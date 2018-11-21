@@ -16,18 +16,26 @@ public class MakeEchoAction extends AbstractGameAction {
     private AbstractCard c;
     private static final float PADDING = 25.0F * Settings.scale;
 
+    private int discount;
+
     public MakeEchoAction(AbstractCard card)
     {
-        this(card, 1);
+        this(card, 1, 0);
     }
 
     public MakeEchoAction(AbstractCard card, int amount)
+    {
+        this(card, amount, 0);
+    }
+
+    public MakeEchoAction(AbstractCard card, int amount, int discount)
     {
         UnlockTracker.markCardAsSeen(card.cardID);
         this.amount = amount;
         this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
         this.duration = DURATION_PER_CARD;
         this.c = card;
+        this.discount = discount;
     }
 
     private AbstractCard echoCard(){
@@ -37,6 +45,7 @@ public class MakeEchoAction extends AbstractGameAction {
         card.isEthereal = true;
         AlwaysRetainField.alwaysRetain.set(card, false);
         card.retain = false;
+        card.updateCost(-1*this.discount);
         return card;
     }
 
