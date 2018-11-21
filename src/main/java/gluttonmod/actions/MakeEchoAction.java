@@ -1,6 +1,7 @@
 package gluttonmod.actions;
 
 import com.badlogic.gdx.math.MathUtils;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -34,6 +35,8 @@ public class MakeEchoAction extends AbstractGameAction {
         card.name = "Echo: " + card.name;
         card.exhaust = true;
         card.isEthereal = true;
+        AlwaysRetainField.alwaysRetain.set(card, false);
+        card.retain = false;
         return card;
     }
 

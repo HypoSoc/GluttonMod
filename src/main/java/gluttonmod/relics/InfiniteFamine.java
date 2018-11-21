@@ -23,7 +23,7 @@ public class InfiniteFamine extends AbstractGluttonRelic {
 
     @Override
     public void atTurnStartPostDraw() {
-        AbstractRelic lollipop = AbstractDungeon.player.getRelic("Lollipop");
+        AbstractRelic lollipop = AbstractDungeon.player.getRelic("Glutton:Lollipop");
         int damage = 2;
         if(lollipop != null){
             damage -= 1;
@@ -43,9 +43,9 @@ public class InfiniteFamine extends AbstractGluttonRelic {
 
     @Override
     public void obtain() {
-        if (AbstractDungeon.player.hasRelic("EternalHunger")) {
+        if (AbstractDungeon.player.hasRelic("Glutton:EternalHunger")) {
             for (int i=0; i<AbstractDungeon.player.relics.size(); ++i) {
-                if (AbstractDungeon.player.relics.get(i).relicId.equals("EternalHunger")) {
+                if (AbstractDungeon.player.relics.get(i).relicId.equals("Glutton:EternalHunger")) {
                     instantObtain(AbstractDungeon.player, i, true);
                     break;
                 }

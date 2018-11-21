@@ -67,24 +67,24 @@ public class GluttonCharacter extends CustomPlayer {
     @Override
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add("Strike_Glutton");
-        retVal.add("Strike_Glutton");
-        retVal.add("Strike_Glutton");
-        retVal.add("Strike_Glutton");
-        retVal.add("Strike_Glutton");
-        retVal.add("Strike_Glutton");
-        retVal.add("Defend_Glutton");
-        retVal.add("Defend_Glutton");
-        retVal.add("Defend_Glutton");
-        retVal.add("Flail");
+        retVal.add("Glutton:Strike");
+        retVal.add("Glutton:Strike");
+        retVal.add("Glutton:Strike");
+        retVal.add("Glutton:Strike");
+        retVal.add("Glutton:Strike");
+        retVal.add("Glutton:Strike");
+        retVal.add("Glutton:Defend");
+        retVal.add("Glutton:Defend");
+        retVal.add("Glutton:Defend");
+        retVal.add("Glutton:Flail");
         return retVal;
     }
 
     @Override
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add("EternalHunger");
-        UnlockTracker.markRelicAsSeen("EternalHunger");
+        retVal.add("Glutton:EternalHunger");
+        UnlockTracker.markRelicAsSeen("Glutton:EternalHunger");
         return retVal;
     }
 

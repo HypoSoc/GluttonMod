@@ -24,7 +24,7 @@ public class EternalHunger extends AbstractGluttonRelic {
 
     @Override
     public void atTurnStartPostDraw() {
-        AbstractRelic lollipop = AbstractDungeon.player.getRelic("Lollipop");
+        AbstractRelic lollipop = AbstractDungeon.player.getRelic("Glutton:Lollipop");
         if(AbstractDungeon.player.currentHealth > 1
                 || lollipop != null) {
             flash();
@@ -43,7 +43,7 @@ public class EternalHunger extends AbstractGluttonRelic {
 
     @Override
     public void onUnequip() {
-        RelicLibrary.bossList.removeIf(r -> r.relicId.equals("InfiniteFamine"));
+        RelicLibrary.bossList.removeIf(r -> r.relicId.equals("Glutton:InfiniteFamine"));
     }
 
     public AbstractRelic makeCopy() {

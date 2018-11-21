@@ -1,47 +1,47 @@
 {
-  "AmuletOfPain":{
+  "Glutton:AmuletOfPain":{
     "NAME": "Amulet of Pain",
     "FLAVOR": "A cursed trinket designed to draw the evil eye.",
     "DESCRIPTIONS": ["Every #b5 times you take damage in combat, deal #b5 damage to ALL enemies." ]
   },
 
-  "DoggyBag":{
+  "Glutton:DoggyBag":{
     "NAME": "Doggy Bag",
     "FLAVOR": "The carefully packed remains of a tasty meal.",
     "DESCRIPTIONS": ["Whenever you defeat an elite, raise your Max HP by #b10." ]
   },
 
-  "EternalHunger":{
+  "Glutton:EternalHunger":{
     "NAME": "Eternal Hunger",
     "FLAVOR": "so... hungry...",
     "DESCRIPTIONS": ["At the start of your turn, lose #b1 HP and draw #b1 card."]
   },
 
-  "Gemstone": {
+  "Glutton:Gemstone": {
     "NAME": "Gemstone",
     "FLAVOR": "Crystalized opulence.",
     "DESCRIPTIONS": ["At the start of each combat, if you have #b300 or more gold, gain #b2 Strength and #b2 Dexterity."]
   },
 
-  "HalfEatenSandwich":{
+  "Glutton:HalfEatenSandwich":{
     "NAME": "Half-Eaten Sandwich",
     "FLAVOR": "Somebody didn't have time to finish their lunch.",
     "DESCRIPTIONS": ["At the end of combat, heal 2 HP and raise your Max HP by 1."]
   },
 
-  "InfiniteFamine":{
+  "Glutton:InfiniteFamine":{
     "NAME": "Infinite Famine",
     "FLAVOR": "must... feed...",
     "DESCRIPTIONS": ["Replaces Eternal Hunger. At the start of your turn, lose #b2 HP and draw #b2 cards."]
   },
 
-  "Lollipop":{
+  "Glutton:Lollipop":{
     "NAME": "Lollipop",
     "FLAVOR": "A satisfying solution to an oral fixation.",
     "DESCRIPTIONS": ["Reduce the HP loss of Eternal Hunger, Infinite Famine, and Hunger Pangs by #b1."]
   },
 
-  "Syringe":{
+  "Glutton:Syringe":{
     "NAME": "Syringe",
     "FLAVOR": "What's in it? Just some water and food coloring.",
     "DESCRIPTIONS": ["Whenever you heal HP, deal #b6 damage to a random enemy."]

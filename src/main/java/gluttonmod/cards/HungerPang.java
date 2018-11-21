@@ -52,7 +52,7 @@ public class HungerPang extends CustomCard {
             AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player,
                     AbstractDungeon.player.getPower("Evolve").amount));
         }
-        AbstractRelic lollipop = AbstractDungeon.player.getRelic("Lollipop");
+        AbstractRelic lollipop = AbstractDungeon.player.getRelic("Glutton:Lollipop");
         int damage = this.actualHungerDamage;
         if(lollipop != null){
             lollipop.flash();
