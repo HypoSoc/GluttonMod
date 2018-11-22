@@ -34,14 +34,6 @@ public class EnfeeblementPower extends AbstractGluttonPower implements OnReceive
     }
 
     @Override
-    public void atStartOfTurnPostDraw() {
-        if(GluttonMod.hasDebuff(this.owner)){
-            flash();
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(this.owner, this.amount));
-        }
-    }
-
-    @Override
     public boolean onReceivePower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         if(power.type == PowerType.DEBUFF){
             flash();
