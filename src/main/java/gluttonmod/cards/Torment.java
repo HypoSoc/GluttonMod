@@ -13,7 +13,7 @@ public class Torment extends AbstractGluttonCard
     public static final String ID = "Torment";
     public static final String NAME = "Torment";
     public static final String DESCRIPTION = "Can only be played if you have lost life !M! or more times this combat. NL Deal !D! damage.";
-    public static final String EXTENDED_DESCRIPTION[] = {" NL (Lost life ", " time.)", " times.)"};
+    public static final String EXTENDED_DESCRIPTION[] = {" NL (Lost life #b", " time.)", " times.)"};
     public static final String CANT_PLAY = "I'm not really feeling it.";
     public static final String IMG_PATH = "cards/torment.png";
 

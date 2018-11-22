@@ -14,6 +14,7 @@ public class Treasure extends AbstractGluttonCard
     public static final String NAME = "Treasure";
     public static final String DESCRIPTION = "Heal !M! HP for every "
             + EXCHANGE + " Gold you have. NL Exhaust.";
+    public static final String EXTENDED_DESCRIPTION[] = {" NL (Heal #b", " HP.)"};
     public static final String IMG_PATH = "cards/treasure.png";
 
     private static final CardType TYPE = CardType.SKILL;
@@ -34,10 +35,24 @@ public class Treasure extends AbstractGluttonCard
         this.exhaust = true;
     }
 
+    public void triggerWhenDrawn() {
+        int healAmount = AbstractDungeon.player.gold / EXCHANGE * this.magicNumber;
+        this.rawDescription = (DESCRIPTION + EXTENDED_DESCRIPTION[0] + healAmount + EXTENDED_DESCRIPTION[1]);
+        initializeDescription();
+    }
+
+    public void onChangeGold(int amount) {
+        int healAmount = AbstractDungeon.player.gold / EXCHANGE * this.magicNumber;
+        this.rawDescription = (DESCRIPTION + EXTENDED_DESCRIPTION[0] + healAmount + EXTENDED_DESCRIPTION[1]);
+        initializeDescription();
+    }
+
     public void use(AbstractPlayer p, AbstractMonster m)
     {
         int heal = p.gold / EXCHANGE * this.magicNumber;
         AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, heal));
+        this.rawDescription = DESCRIPTION;
+        initializeDescription();
     }
 
     public AbstractCard makeCopy()
