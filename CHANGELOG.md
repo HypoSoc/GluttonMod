@@ -1,3 +1,31 @@
+# Version 1.0.0
+
+Major release. All planned cards and relics are now included.
+
+New character select button, courtesy of RedDyeNo5
+
+Added 13 New Cards: Autotomy, Clot, Eat Alive, Feast, Fever, Hoard, Loot, Masochist, Rapacity, Regurgitate, Revivification, Shed Fat, and Vitality
+
+Added new Uncommon Relic: Lucky Sock
+
+Added new Rare Relic: Treadmill
+
+Added new Rare Relic: Muscle Shirt
+
+Mod is now safe for use with other mods. (At least, not id conflicts will occur).
+
+Yearn has been tweaked to be less abusable as a common. Rather than cost zero, it costs 1, and discounts the echo it creates by 1. When used fairly, the total cost is unchanged.
+
+Gold themed cards have been tweaked as a whole. Obsessive Greed now costs more when updated. Treasure now costs 1 and no longer grants gold, only heals, (and indicates how much it heals for). Gold gaining cards now visually work with Ectoplasm and Lucky Sock.
+
+Chomp Art no longer overflows the borders.
+
+Starvation Mode has been tweaked, to be The Glutton's "Form" power. It now costs three, but has a more impactful effect.
+
+Enfeeblement no longer has a Fever Visions power secretly built into it.
+
+
+
 # Version 0.5.0
 
 Added 5 new cards: Enfeeblement, Malignancy, Reminisce, Starvation Mode, and Treasure
