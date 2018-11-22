@@ -91,6 +91,7 @@ public class GluttonMod implements EditCharactersSubscriber, EditRelicsSubscribe
         addRelicToCustomPool(new LuckySock(), AbstractCardEnum.GLUTTON);
 
         //Rare
+        addRelicToCustomPool(new MuscleShirt(), AbstractCardEnum.GLUTTON);
         addRelicToCustomPool(new Syringe(), AbstractCardEnum.GLUTTON);
         addRelicToCustomPool(new Treadmill(), AbstractCardEnum.GLUTTON);
 

@@ -47,6 +47,12 @@
     "DESCRIPTIONS": ["#yGold gain during combat is increased by #b25%."]
   },
 
+  "Glutton:MuscleShirt":{
+    "NAME": "Muscle Shirt",
+    "FLAVOR": "Work through the sweat. Work past the tears.",
+    "DESCRIPTIONS": ["Every third time you gain a debuff, gain #b1 #yStrength."]
+  },
+
   "Glutton:Syringe":{
     "NAME": "Syringe",
     "FLAVOR": "What's in it? Just some water and food coloring.",
