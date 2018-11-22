@@ -41,8 +41,10 @@ public class Mug extends AbstractGluttonCard
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage,
                 this.damageTypeForTurn), AttackEffect.SLASH_HORIZONTAL));
         p.gainGold(this.magicNumber);
-        for (int i = 0; i < this.magicNumber; i++) {
-            AbstractDungeon.effectList.add(new GainPennyEffect(p, m.hb.cX, m.hb.cY, p.hb.cX, p.hb.cY, true));
+        if(!p.hasRelic("Ectoplasm")) {
+            for (int i = 0; i < this.magicNumber; i++) {
+                AbstractDungeon.effectList.add(new GainPennyEffect(p, m.hb.cX, m.hb.cY, p.hb.cX, p.hb.cY, true));
+            }
         }
     }
 

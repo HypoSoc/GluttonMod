@@ -61,8 +61,10 @@ public class HoardPower extends AbstractGluttonPower {
     public void onRemove() {
         AbstractPlayer p = AbstractDungeon.player;
         p.gainGold(this.gold);
-        for (int i = 0; i < this.gold; i++) {
-            AbstractDungeon.effectList.add(new GainPennyEffect(p, 0, 0, p.hb.cX, p.hb.cY, true));
+        if(!p.hasRelic("Ectoplasm")) {
+            for (int i = 0; i < this.gold; i++) {
+                AbstractDungeon.effectList.add(new GainPennyEffect(p, 0, 0, p.hb.cX, p.hb.cY, true));
+            }
         }
 
         if(this.owner.hasPower("Glutton:Stockpile")){

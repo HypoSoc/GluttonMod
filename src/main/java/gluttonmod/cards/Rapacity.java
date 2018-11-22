@@ -39,9 +39,11 @@ public class Rapacity extends AbstractGluttonCard {
             AbstractDungeon.actionManager.addToBottom(new ExhaustAction(p, p, 1, true));
         }
 
-        p.gainGold(this.magicNumber);
-        for (int i = 0; i < this.magicNumber; i++) {
-            AbstractDungeon.effectList.add(new GainPennyEffect(p, 0, 0, p.hb.cX, p.hb.cY, true));
+        if(!p.hasRelic("Ectoplasm")) {
+            p.gainGold(this.magicNumber);
+            for (int i = 0; i < this.magicNumber; i++) {
+                AbstractDungeon.effectList.add(new GainPennyEffect(p, 0, 0, p.hb.cX, p.hb.cY, true));
+            }
         }
     }
 

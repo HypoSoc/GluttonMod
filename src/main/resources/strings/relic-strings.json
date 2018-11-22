@@ -41,6 +41,12 @@
     "DESCRIPTIONS": ["Reduce the HP loss of Eternal Hunger, Infinite Famine, and Hunger Pangs by #b1."]
   },
 
+  "Glutton:LuckySock":{
+    "NAME": "Lucky Sock",
+    "FLAVOR": "Its owner never, ever, ever took it off.",
+    "DESCRIPTIONS": ["#yGold gain during combat is increased by #b25%."]
+  },
+
   "Glutton:Syringe":{
     "NAME": "Syringe",
     "FLAVOR": "What's in it? Just some water and food coloring.",

@@ -37,9 +37,11 @@ public class LootAction extends AbstractGameAction
             {
                 AbstractPlayer p = AbstractDungeon.player;
                 p.gainGold(this.goldAmount);
-                AbstractCreature m = this.target;
-                for (int i = 0; i < this.goldAmount; i++) {
-                    AbstractDungeon.effectList.add(new GainPennyEffect(p, m.hb.cX, m.hb.cY, p.hb.cX, p.hb.cY, true));
+                if(!p.hasRelic("Ectoplasm")) {
+                    AbstractCreature m = this.target;
+                    for (int i = 0; i < this.goldAmount; i++) {
+                        AbstractDungeon.effectList.add(new GainPennyEffect(p, m.hb.cX, m.hb.cY, p.hb.cX, p.hb.cY, true));
+                    }
                 }
             }
             if (AbstractDungeon.getCurrRoom().monsters.areMonstersBasicallyDead()) {
