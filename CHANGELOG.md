@@ -1,3 +1,7 @@
+# Version 1.0.1
+
+Fixed visual effect error with Lucky Sock showing incorrect gold gain. (It was functionally correct).
+
 # Version 1.0.0
 
 Major release. All planned cards and relics are now included.

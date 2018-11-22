@@ -17,10 +17,11 @@ public class GainGoldPatch {
     public static SpireReturn Prefix(AbstractPlayer abstractPlayer, int amount){
         if(abstractPlayer.hasRelic("Glutton:LuckySock") && !abstractPlayer.hasRelic("Ectoplasm")
             && (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT)){
-            amount += (amount / 4);
+            int additional = amount/4;
+            amount += additional;
             AbstractRelic sock = abstractPlayer.getRelic("Glutton:LuckySock");
             sock.flash();
-            for (int i = 1; i < amount/4; i++) {
+            for (int i = 0; i < additional; i++) {
                 AbstractDungeon.effectList.add(new GainPennyEffect(abstractPlayer, sock.hb.cX, sock.hb.cY, abstractPlayer.hb.cX, abstractPlayer.hb.cY, true));
             }
             if(amount > 0){
