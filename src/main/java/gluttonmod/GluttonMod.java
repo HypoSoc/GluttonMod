@@ -1,6 +1,7 @@
 package gluttonmod;
 
 import basemod.BaseMod;
+import basemod.helpers.BaseModCardTags;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
@@ -154,6 +155,7 @@ public class GluttonMod implements EditCharactersSubscriber, EditRelicsSubscribe
         BaseMod.addCard(new Voracity());
         //Skills
         BaseMod.addCard(new Chrysosphagy());
+        BaseMod.addCard(new Clot());
         BaseMod.addCard(new Delusion());
         BaseMod.addCard(new Dispepsia());
         BaseMod.addCard(new Fever());
