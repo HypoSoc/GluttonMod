@@ -1,5 +1,6 @@
 package gluttonmod.cards;
 
+import basemod.helpers.BaseModCardTags;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -19,9 +20,9 @@ public class StarvationMode extends AbstractGluttonCard
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    private static final int COST = 2;
-    private static final int MAGIC = 3;
-    private static final int UPGRADE_BONUS = 1;
+    private static final int COST = 3;
+    private static final int MAGIC = 4;
+    private static final int UPGRADE_BONUS = 2;
 
     public StarvationMode()
     {
@@ -29,6 +30,7 @@ public class StarvationMode extends AbstractGluttonCard
 
         this.baseMagicNumber = MAGIC;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(BaseModCardTags.FORM);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m)
