@@ -160,6 +160,7 @@ public class GluttonMod implements EditCharactersSubscriber, EditRelicsSubscribe
         BaseMod.addCard(new Migraine());
         BaseMod.addCard(new ObsessiveGreed());
         BaseMod.addCard(new ShareWeakness());
+        BaseMod.addCard(new ShedFat());
         BaseMod.addCard(new Toxicity());
         BaseMod.addCard(new Tumor());
         //Powers
