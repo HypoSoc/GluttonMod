@@ -1,3 +1,7 @@
+# Version 1.0.3
+
+Never mind about the Helix thing. It caused an annoying visual effect issue with other characters when helix is acquired.
+
 # Version 1.0.2
 
 The Glutton will no longer get Fossilized Helix as an option (since it is so terrible with its starting relic.)
