@@ -1,3 +1,7 @@
+# Version 1.0.2
+
+The Glutton will no longer get Fossilized Helix as an option (since it is so terrible with its starting relic.)
+
 # Version 1.0.1
 
 Fixed visual effect error with Lucky Sock showing incorrect gold gain. (It was functionally correct).

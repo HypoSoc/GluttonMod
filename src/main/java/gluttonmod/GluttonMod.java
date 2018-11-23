@@ -31,7 +31,7 @@ import static basemod.BaseMod.addRelicToCustomPool;
 @SpireInitializer
 public class GluttonMod implements EditCharactersSubscriber, EditRelicsSubscriber,
         EditCardsSubscriber, EditStringsSubscriber, EditKeywordsSubscriber, PostDrawSubscriber,
-        OnStartBattleSubscriber {
+        OnStartBattleSubscriber, PostDungeonInitializeSubscriber {
 
     private static final Color GLUTTON_COLOR = CardHelper.getColor(75.0f, 175.0f, 75.0f);
     private static final String ASSETS_FOLDER = "images";
@@ -235,6 +235,16 @@ public class GluttonMod implements EditCharactersSubscriber, EditRelicsSubscribe
     public void receiveOnBattleStart(AbstractRoom abstractRoom) {
         // Bug fix for damageReceivedThisTurn not resetting properly
         GameActionManager.damageReceivedThisTurn = 0;
+    }
+
+    @Override
+    public void receivePostDungeonInitialize()
+    {
+        if (AbstractDungeon.player instanceof GluttonCharacter ) {
+            if (AbstractDungeon.rareRelicPool.removeIf(r -> r.equals("FossilizedHelix"))) {
+                logger.info("FossilizedHelix removed.");
+        }
+    }
     }
 
     public static boolean hasDebuff(AbstractCreature c) {
