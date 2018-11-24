@@ -10,7 +10,7 @@ public class Treat extends AbstractGluttonCard
 {
     public static final String ID = "Treat";
     public static final String NAME = "Treat";
-    public static final String DESCRIPTION = "Gain !B! block. NL If this card is Exhausted, gain !M! Maximum HP.";
+    public static final String DESCRIPTION = "Gain !B! Block. NL If this card is Exhausted, gain !M! Maximum HP.";
     public static final String IMG_PATH = "cards/treat.png";
 
     private static final CardType TYPE = CardType.SKILL;

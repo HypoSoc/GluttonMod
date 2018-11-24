@@ -11,7 +11,7 @@ public class GuardStance extends AbstractGluttonCard
 {
     public static final String ID = "GuardStance";
     public static final String NAME = "Guard Stance";
-    public static final String DESCRIPTION = "Gain !B! block. NL Heal !M! HP. NL Exhaust.";
+    public static final String DESCRIPTION = "Gain !B! Block. NL Heal !M! HP. NL Exhaust.";
     public static final String IMG_PATH = "cards/guardstance.png";
 
     private static final CardType TYPE = CardType.SKILL;

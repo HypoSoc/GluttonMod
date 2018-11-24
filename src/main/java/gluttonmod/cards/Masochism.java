@@ -12,7 +12,7 @@ public class Masochism extends AbstractGluttonCard
 {
     public static final String ID = "Masochism";
     public static final String NAME = "Masochism";
-    public static final String DESCRIPTION = "Whenever you lose HP, gain !M! block.";
+    public static final String DESCRIPTION = "Whenever you lose HP, gain !M! Block.";
     public static final String IMG_PATH = "cards/masochism.png";
 
     private static final CardType TYPE = CardType.POWER;

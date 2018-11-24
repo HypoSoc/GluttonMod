@@ -11,7 +11,7 @@ public class Brace extends AbstractGluttonCard
 {
     public static final String ID = "Brace";
     public static final String NAME = "Brace";
-    public static final String DESCRIPTION = "Lose !M! HP. NL Gain !B! block.";
+    public static final String DESCRIPTION = "Lose !M! HP. NL Gain !B! Block.";
     public static final String IMG_PATH = "cards/brace.png";
 
     private static final CardType TYPE = CardType.SKILL;

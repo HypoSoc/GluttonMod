@@ -15,7 +15,7 @@ import gluttonmod.GluttonMod;
 public class MasochismPower extends AbstractGluttonPower {
     public static final String POWER_ID = "Glutton:Masochism";
     public static final String NAME = "Masochism";
-    public static final String[] DESCRIPTIONS = new String[]{ "Whenever you lose HP, gain #b", " block."};
+    public static final String[] DESCRIPTIONS = new String[]{ "Whenever you lose HP, gain #b", " Block."};
     public static final String IMG = "powers/masochism.png";
 
     public MasochismPower(AbstractCreature owner, int amount) {

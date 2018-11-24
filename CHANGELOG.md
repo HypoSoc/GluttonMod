@@ -1,3 +1,7 @@
+# Version 1.0.4
+
+Changed Block to Block
+
 # Version 1.0.3
 
 Never mind about the Helix thing. It caused an annoying visual effect issue with other characters when helix is acquired.

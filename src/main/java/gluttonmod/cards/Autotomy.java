@@ -11,7 +11,7 @@ public class Autotomy extends AbstractGluttonCard
 {
     public static final String ID = "Autotomy";
     public static final String NAME = "Autotomy";
-    public static final String DESCRIPTION = "Retain. NL Exhaust all status and curse cards in your hand and gain !B! block for each. NL Exhaust.";
+    public static final String DESCRIPTION = "Retain. NL Exhaust all status and curse cards in your hand and gain !B! Block for each. NL Exhaust.";
     public static final String IMG_PATH = "cards/autotomy.png";
 
     private static final CardType TYPE = CardType.SKILL;

@@ -17,7 +17,7 @@ public class Throb extends AbstractGluttonCard
     public static final String ID = "Throb";
     public static final String NAME = "Throb";
     public static final String DESCRIPTION = "Deal !D! damage. If you have lost at least "
-            + HP_LOSS_CHECK + " HP this turn, Gain !B! block.";
+            + HP_LOSS_CHECK + " HP this turn, Gain !B! Block.";
     public static final String IMG_PATH = "cards/throb.png";
 
     private static final CardType TYPE = CardType.ATTACK;
