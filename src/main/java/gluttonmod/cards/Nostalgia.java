@@ -12,7 +12,7 @@ public class Nostalgia extends AbstractGluttonCard
 {
     public static final String ID = "Nostalgia";
     public static final String NAME = "Nostalgia";
-    public static final String DESCRIPTION = "Whenever you exhaust a non-ethereal Skill or Attack, create an echo of it.";
+    public static final String DESCRIPTION = "Whenever you Exhaust a non-Ethereal Skill or Attack, create an Echo of it.";
     public static final String IMG_PATH = "cards/nostalgia.png";
 
     private static final CardType TYPE = CardType.POWER;

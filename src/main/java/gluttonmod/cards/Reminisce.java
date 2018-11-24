@@ -15,7 +15,7 @@ public class Reminisce extends AbstractGluttonCard {
     public static final String ID = "Reminisce";
     public static final String NAME = "Reminisce";
     public static final String DESCRIPTION = "Deal !D! damage for each card in your Exhaust pile.";
-    public static final String EXTENDED_DESCRIPTION[] = {" NL (", " 1 card exhausted.)", " cards exhausted.)"};
+    public static final String EXTENDED_DESCRIPTION[] = {" NL (", " 1 card Exhausted.)", " cards Exhausted.)"};
     public static final String IMG_PATH = "cards/reminisce.png";
 
     private static final CardType TYPE = CardType.ATTACK;

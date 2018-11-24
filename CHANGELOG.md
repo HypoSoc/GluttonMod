@@ -1,6 +1,6 @@
 # Version 1.0.4
 
-Changed Block to Block
+Capitalization
 
 # Version 1.0.3
 

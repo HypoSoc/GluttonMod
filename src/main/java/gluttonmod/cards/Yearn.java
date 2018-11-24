@@ -11,8 +11,8 @@ public class Yearn extends AbstractGluttonCard
 {
     public static final String ID = "Yearn";
     public static final String NAME = "Yearn";
-    public static final String DESCRIPTION = "Draw a card. If it is not a status or curse, create an echo of it that costs 1 less. NL Exhaust.";
-    public static final String UPGRADED_DESCRIPTION = "Draw a card. If it is not a status or curse, create an echo of it that costs 1 less.";
+    public static final String DESCRIPTION = "Draw a card. If it is not a status or curse, create an Echo of it that costs 1 less. NL Exhaust.";
+    public static final String UPGRADED_DESCRIPTION = "Draw a card. If it is not a status or curse, create an Echo of it that costs 1 less.";
     public static final String IMG_PATH = "cards/yearn.png";
 
     private static final CardType TYPE = CardType.SKILL;

@@ -13,7 +13,7 @@ public class Tumor extends AbstractGluttonCard
     private static final int DRAWBACK = 1;
     public static final String ID = "Tumor";
     public static final String NAME = "Tumor";
-    public static final String DESCRIPTION = "Gain " + DRAWBACK + " Weak, Frail, and Vulnerable. NL If this card is exhausted, draw !M! cards.";
+    public static final String DESCRIPTION = "Gain " + DRAWBACK + " Weak, Frail, and Vulnerable. NL If this card is Exhausted, draw !M! cards.";
     public static final String IMG_PATH = "cards/tumor.png";
 
     private static final CardType TYPE = CardType.SKILL;

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class DelusionAction extends AbstractGameAction {
     private AbstractPlayer p;
-    private static String[] TEXT = {"Choose a card to echo."};
+    private static String[] TEXT = {"Choose a card to Echo."};
     private ArrayList<AbstractCard> etherealCards = new ArrayList();
 
     public DelusionAction(AbstractPlayer p, int amount){

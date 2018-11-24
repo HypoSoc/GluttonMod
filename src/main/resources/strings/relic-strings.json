@@ -62,6 +62,6 @@
   "Glutton:Treadmill":{
     "NAME": "Treadmill",
     "FLAVOR": "A torturous device designed to stave off the effects of gluttony.",
-    "DESCRIPTIONS": ["Whenever you exhaust a non-ethereal card, heal #b3 HP."]
+    "DESCRIPTIONS": ["Whenever you Exhaust a non-Ethereal card, heal #b3 HP."]
   }
 }
