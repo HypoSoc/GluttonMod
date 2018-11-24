@@ -1,6 +1,6 @@
 # Version 1.0.4
 
-Capitalization
+Minor aesthetic changes. Updated pom for new basemod/stslib
 
 # Version 1.0.3
 

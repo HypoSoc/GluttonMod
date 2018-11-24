@@ -14,7 +14,7 @@ public class Treasure extends AbstractGluttonCard
     public static final String NAME = "Treasure";
     public static final String DESCRIPTION = "Heal !M! HP for every "
             + EXCHANGE + " Gold you have. NL Exhaust.";
-    public static final String EXTENDED_DESCRIPTION[] = {" NL (Heal #b", " HP.)"};
+    public static final String EXTENDED_DESCRIPTION[] = {" NL (Heal ", " HP.)"};
     public static final String IMG_PATH = "cards/treasure.png";
 
     private static final CardType TYPE = CardType.SKILL;
