@@ -1,3 +1,7 @@
+# Version 1.0.5
+
+Changed more capitalization, fixed keywords.
+
 # Version 1.0.4
 
 Minor aesthetic changes. Updated pom for new basemod/stslib
