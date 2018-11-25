@@ -57,7 +57,6 @@ public class GoldenArmor extends AbstractGluttonCard {
         {
             upgradeName();
             upgradeMagicNumber(UPGRADE_MAGIC);
-            this.baseBlock = AbstractDungeon.player.gold / this.magicNumber;
         }
     }
 }
