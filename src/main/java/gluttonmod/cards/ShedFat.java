@@ -12,8 +12,8 @@ import gluttonmod.actions.ShedFatAction;
 public class ShedFat extends AbstractGluttonCard {
     public static final String ID = "ShedFat";
     public static final String NAME = "Shed Fat";
-    public static final String DESCRIPTION = "Exhaust your hand. Draw that many cards plus !M!. Exhaust.";
-    public static final String UPGRADE_DESCRIPTION = "Retain. Exhaust your hand. Draw that many cards plus !M!. Exhaust.";
+    public static final String DESCRIPTION = "Exhaust your hand. Draw that many cards plus !M!. NL Exhaust.";
+    public static final String UPGRADE_DESCRIPTION = "Retain. Exhaust your hand. Draw that many cards plus !M!. NL Exhaust.";
     public static final String IMG_PATH = "cards/shedfat.png";
 
     private static final CardType TYPE = CardType.SKILL;

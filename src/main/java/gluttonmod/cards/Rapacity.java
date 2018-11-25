@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.vfx.GainPennyEffect;
 public class Rapacity extends AbstractGluttonCard {
     public static final String ID = "Rapacity";
     public static final String NAME = "Rapacity";
-    public static final String DESCRIPTION = "Exhaust a random card. NL Gain !M! Gold. NL Exhaust..";
+    public static final String DESCRIPTION = "Exhaust a random card. NL Gain !M! Gold. NL Exhaust.";
     public static final String UPGRADE_DESCRIPTION = "Exhaust a card. NL Gain !M! Gold. NL Exhaust.";
     public static final String IMG_PATH = "cards/rapacity.png";
 
