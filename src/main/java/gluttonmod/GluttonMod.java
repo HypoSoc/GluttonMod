@@ -210,7 +210,7 @@ public class GluttonMod implements EditCharactersSubscriber, EditRelicsSubscribe
     @Override
     public void receiveEditKeywords() {
         BaseMod.addKeyword("Hunger Pang", new String[]{"hunger pang", "hunger_pang", "hunger pangs", "hunger_pangs"},
-                "Hunger Pangs are unplayable status cards that damage you and draw you new cards.");
+                "Hunger Pangs are unplayable Status cards that damage you and draw you new cards.");
         BaseMod.addKeyword(new String[]{"Echo", "Echoes"},
                 "Echoes are copies of cards with Ethereal and Exhaust.");
         BaseMod.addKeyword(new String[]{"Bleed"},

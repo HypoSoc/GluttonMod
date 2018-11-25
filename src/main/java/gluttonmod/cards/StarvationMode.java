@@ -13,7 +13,7 @@ public class StarvationMode extends AbstractGluttonCard
 {
     public static final String ID = "StarvationMode";
     public static final String NAME = "Starvation Mode";
-    public static final String DESCRIPTION = "Gain Starving. NL Whenever you draw a status or curse, apply !M! Poison to ALL enemies.";
+    public static final String DESCRIPTION = "Gain Starving. NL Whenever you draw a Status or Curse, apply !M! Poison to ALL enemies.";
     public static final String IMG_PATH = "cards/starvationmode.png";
 
     private static final CardType TYPE = CardType.POWER;
