@@ -20,7 +20,7 @@
   "Glutton:Gemstone": {
     "NAME": "Gemstone",
     "FLAVOR": "Crystalized opulence.",
-    "DESCRIPTIONS": ["At the start of each combat, if you have #b300 or more gold, gain #b2 Strength and #b2 Dexterity."]
+    "DESCRIPTIONS": ["At the start of each combat, if you have #b300 or more Gold, gain #b2 Strength and #b2 Dexterity."]
   },
 
   "Glutton:HalfEatenSandwich":{
@@ -50,7 +50,7 @@
   "Glutton:MuscleShirt":{
     "NAME": "Muscle Shirt",
     "FLAVOR": "Work through the sweat. Work past the tears.",
-    "DESCRIPTIONS": ["Every third time you gain a debuff, gain #b1 #yStrength."]
+    "DESCRIPTIONS": ["Every third time you gain a Debuff, gain #b1 #yStrength."]
   },
 
   "Glutton:Syringe":{

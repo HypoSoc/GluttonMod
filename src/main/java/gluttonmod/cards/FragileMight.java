@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class FragileMight extends AbstractGluttonCard {
     public static final String ID = "FragileMight";
     public static final String NAME = "Fragile Might";
-    public static final String DESCRIPTION = "Deal !D! damage. Double the number of hits for each debuff you have.";
+    public static final String DESCRIPTION = "Deal !D! damage. Double the number of hits for each Debuff you have.";
     public static final String EXTENDED_DESCRIPTION[] = {" NL Hits", "1 time.", "times."};
     public static final String IMG_PATH = "cards/fragilemight.png";
 

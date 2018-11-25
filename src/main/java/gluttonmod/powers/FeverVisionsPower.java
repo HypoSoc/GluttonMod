@@ -9,7 +9,7 @@ import gluttonmod.GluttonMod;
 public class FeverVisionsPower extends AbstractGluttonPower {
     public static final String POWER_ID = "Glutton:FeverVisions";
     public static final String NAME = "Fever Visions";
-    public static final String[] DESCRIPTIONS = {"At the start of your turn, if you have a debuff, draw #b",
+    public static final String[] DESCRIPTIONS = {"At the start of your turn, if you have a Debuff, draw #b",
             "card.", "cards."};
     public static final String IMG = "powers/fevervisions.png";
 

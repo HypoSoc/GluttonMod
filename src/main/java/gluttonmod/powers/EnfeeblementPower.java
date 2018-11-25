@@ -13,7 +13,7 @@ import gluttonmod.GluttonMod;
 public class EnfeeblementPower extends AbstractGluttonPower implements OnReceivePowerPower {
     public static final String POWER_ID = "Glutton:Enfeeblement";
     public static final String NAME = "Enfeeblement";
-    public static final String[] DESCRIPTIONS = {"Whenever you gain a debuff, deal #b",
+    public static final String[] DESCRIPTIONS = {"Whenever you gain a Debuff, deal #b",
             " damage to a random enemy."};
     public static final String IMG = "powers/enfeeblement.png";
 

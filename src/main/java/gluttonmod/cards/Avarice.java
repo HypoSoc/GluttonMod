@@ -18,7 +18,7 @@ public class Avarice extends AbstractGluttonCard
     public static final String ID = "Avarice";
     public static final String NAME = "Avarice";
     public static final String DESCRIPTION = "Costs 1 less [R]  for every "
-        + PRICE + " gold you have. NL Deal !D! damage.";
+        + PRICE + " Gold you have. NL Deal !D! damage.";
     public static final String IMG_PATH = "cards/avarice.png";
 
     private static final CardType TYPE = CardType.ATTACK;

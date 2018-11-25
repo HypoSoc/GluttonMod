@@ -11,7 +11,7 @@ public class Enfeeblement extends AbstractGluttonCard
 {
     public static final String ID = "Enfeeblement";
     public static final String NAME = "Enfeeblement";
-    public static final String DESCRIPTION = "Whenever you gain a debuff, deal !M! damage to a random enemy.";
+    public static final String DESCRIPTION = "Whenever you gain a Debuff, deal !M! damage to a random enemy.";
     public static final String IMG_PATH = "cards/enfeeblement.png";
 
     private static final CardType TYPE = CardType.POWER;

@@ -16,7 +16,7 @@ public class FeebleKick extends AbstractGluttonCard
 {
     public static final String ID = "FeebleKick";
     public static final String NAME = "Feeble Kick";
-    public static final String DESCRIPTION = "Deal !D! damage. If you have a debuff, Gain [R] and draw 1 card.";
+    public static final String DESCRIPTION = "Deal !D! damage. If you have a Debuff, Gain [R] and draw 1 card.";
     public static final String IMG_PATH = "cards/feeblekick.png";
 
     private static final CardType TYPE = CardType.ATTACK;

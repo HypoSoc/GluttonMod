@@ -11,8 +11,8 @@ public class FeverVisions extends AbstractGluttonCard
 {
     public static final String ID = "FeverVisions";
     public static final String NAME = "Fever Visions";
-    public static final String DESCRIPTION = "At the start of your turn, if you have a debuff, draw !M! card.";
-    public static final String UPGRADE_DESCRIPTION = "At the start of your turn, if you have a debuff, draw !M! cards.";
+    public static final String DESCRIPTION = "At the start of your turn, if you have a Debuff, draw !M! card.";
+    public static final String UPGRADE_DESCRIPTION = "At the start of your turn, if you have a Debuff, draw !M! cards.";
     public static final String IMG_PATH = "cards/fevervisions.png";
 
     private static final CardType TYPE = CardType.POWER;

@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 public class GoldenArmor extends AbstractGluttonCard {
     public static final String ID = "GoldenArmor";
     public static final String NAME = "Golden Armor";
-    public static final String DESCRIPTION = "Gain 1 Block for every !M! gold you have.";
+    public static final String DESCRIPTION = "Gain 1 Block for every !M! Gold you have.";
     public static final String EXTENDED_DESCRIPTION = " NL (Gain !B! Block.)";
     public static final String IMG_PATH = "cards/goldenarmor.png";
 

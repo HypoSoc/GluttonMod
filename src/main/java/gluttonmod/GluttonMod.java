@@ -215,7 +215,7 @@ public class GluttonMod implements EditCharactersSubscriber, EditRelicsSubscribe
                 "Echoes are copies of cards with Ethereal and Exhaust.");
         BaseMod.addKeyword(new String[]{"Bleed"},
                 "Bleeding creatures lose HP at the start of their turn.");
-        BaseMod.addKeyword(new String[]{"starving"},
+        BaseMod.addKeyword(new String[]{"Starving"},
                 "At the start of each turn, add Hunger Pangs to your discard pile.");
     }
 
