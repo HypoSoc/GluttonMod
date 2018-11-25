@@ -12,7 +12,7 @@ import gluttonmod.GluttonMod;
 public class StarvationModePower extends AbstractGluttonPower {
     public static final String POWER_ID = "Glutton:StarvationMode";
     public static final String NAME = "Starvation Mode";
-    public static final String[] DESCRIPTIONS = new String[]{ "Whenever you draw a status or curse, apply #b", " #yPoison to ALL enemies."};
+    public static final String[] DESCRIPTIONS = new String[]{ "Whenever you draw a Status or Curse, apply #b", " #yPoison to ALL enemies."};
     public static final String IMG = "powers/starvationmode.png";
 
     public StarvationModePower(AbstractCreature owner, int amount) {
