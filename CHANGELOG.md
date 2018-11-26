@@ -1,3 +1,13 @@
+# Version 1.0.6
+
+Awesome new relic art for Muscle Shirt and Lucky Sock.
+
+Tantrum will now work as intended, identifying the weakest living monster at the time it executes, not at the time of exhaustion. If you kill the weakest monster using Devour to exhaust Tantrum, Tantrum will now hit another monster rather than fizzling.
+
+Fixed bug where Golden Armor would crash the Card Library
+
+Minor Aesthetic Fixes
+
 # Version 1.0.5
 
 Changed more capitalization, fixed keywords.
