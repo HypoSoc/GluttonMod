@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import gluttonmod.actions.DamageWeakestEnemyAction;
 
 public class Tantrum extends AbstractGluttonCard {
     public static final String ID = "Tantrum";
@@ -39,22 +40,10 @@ public class Tantrum extends AbstractGluttonCard {
 
     public void triggerOnExhaust()
     {
-        AbstractMonster weakestMonster = null;
-        for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
-            if (!m.isDeadOrEscaped()) {
-                if (weakestMonster == null) {
-                    weakestMonster = m;
-                } else if (m.currentHealth < weakestMonster.currentHealth) {
-                    weakestMonster = m;
-                }
-            }
-        }
-        if (weakestMonster != null) {
-            AbstractDungeon.actionManager.addToBottom(
-                    new DamageAction(weakestMonster,
-                            new DamageInfo(AbstractDungeon.player, this.damage, this.damageTypeForTurn),
-                            AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        }
+        AbstractDungeon.actionManager.addToBottom(
+                new DamageWeakestEnemyAction(
+                        new DamageInfo(AbstractDungeon.player, this.damage, this.damageTypeForTurn),
+                        AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
     }
 
     public AbstractCard makeCopy()
