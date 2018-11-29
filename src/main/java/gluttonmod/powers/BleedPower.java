@@ -1,6 +1,8 @@
 package gluttonmod.powers;
 
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.HealthBarRenderPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -8,7 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import gluttonmod.GluttonMod;
 
-public class BleedPower extends AbstractGluttonPower {
+public class BleedPower extends AbstractGluttonPower implements HealthBarRenderPower {
     public static final String POWER_ID = "Glutton:Bleed";
     public static final String NAME = "Bleed";
     public static final String[] DESCRIPTIONS = {
@@ -49,5 +51,15 @@ public class BleedPower extends AbstractGluttonPower {
                 AbstractDungeon.actionManager.addToBottom(new LoseHPAction(this.owner, this.source, this.amount, AbstractGameAction.AttackEffect.FIRE));
             }
         }
+    }
+
+    @Override
+    public int getHealthBarAmount() {
+        return this.amount;
+    }
+
+    @Override
+    public Color getColor() {
+        return Color.PINK;
     }
 }
