@@ -34,22 +34,22 @@ public class GluttonCharacter extends CustomPlayer {
     public static final String SKELETON_ATLAS = "char/skeleton.atlas"; // spine animation atlas
     public static final String SKELETON_JSON = "char/skeleton.json"; // spine animation json
     public static final String[] orbTextures = {
-            "images/char/orb/layer1.png",
-            "images/char/orb/layer2.png",
-            "images/char/orb/layer3.png",
-            "images/char/orb/layer4.png",
-            "images/char/orb/layer5.png",
-            "images/char/orb/layer6.png",
-            "images/char/orb/layer1d.png",
-            "images/char/orb/layer2d.png",
-            "images/char/orb/layer3d.png",
-            "images/char/orb/layer4d.png",
-            "images/char/orb/layer5d.png"
+            "gluttonmod/images/char/orb/layer1.png",
+            "gluttonmod/images/char/orb/layer2.png",
+            "gluttonmod/images/char/orb/layer3.png",
+            "gluttonmod/images/char/orb/layer4.png",
+            "gluttonmod/images/char/orb/layer5.png",
+            "gluttonmod/images/char/orb/layer6.png",
+            "gluttonmod/images/char/orb/layer1d.png",
+            "gluttonmod/images/char/orb/layer2d.png",
+            "gluttonmod/images/char/orb/layer3d.png",
+            "gluttonmod/images/char/orb/layer4d.png",
+            "gluttonmod/images/char/orb/layer5d.png"
     };
 
     public GluttonCharacter(String name) {
         super(name, GluttonEnum.GLUTTON, orbTextures,
-                "images/char/orb/vfx.png", (String)null, null);
+                "gluttonmod/images/char/orb/vfx.png", (String)null, null);
 
         this.dialogX = (this.drawX + 0.0F * Settings.scale);
         this.dialogY = (this.drawY + 220.0F * Settings.scale);
