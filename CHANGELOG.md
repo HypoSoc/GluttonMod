@@ -1,3 +1,9 @@
+# Version 1.0.7
+
+Bleed now renders like Posion in the health bar, letting you see how much damage will occur.
+
+Glutton Mod will no longer clash if loaded with Witch Mod.
+
 # Version 1.0.6
 
 Awesome new relic art for Muscle Shirt and Lucky Sock.

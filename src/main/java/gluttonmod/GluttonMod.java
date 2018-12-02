@@ -33,7 +33,7 @@ public class GluttonMod implements EditCharactersSubscriber, EditRelicsSubscribe
         OnStartBattleSubscriber {
 
     private static final Color GLUTTON_COLOR = CardHelper.getColor(75.0f, 175.0f, 75.0f);
-    private static final String ASSETS_FOLDER = "images";
+    private static final String ASSETS_FOLDER = "gluttonmod/images";
 
     private static final String ATTACK_CARD = "512/bg_attack_glutton.png";
     private static final String SKILL_CARD = "512/bg_skill_glutton.png";
@@ -202,7 +202,7 @@ public class GluttonMod implements EditCharactersSubscriber, EditRelicsSubscribe
 
     @Override
     public void receiveEditStrings() {
-        String relicStrings = Gdx.files.internal("strings/relic-strings.json").readString(
+        String relicStrings = Gdx.files.internal("gluttonmod/strings/relic-strings.json").readString(
                 String.valueOf(StandardCharsets.UTF_8));
         BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
     }
