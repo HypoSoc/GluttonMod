@@ -117,12 +117,12 @@ public class GluttonMod implements EditCharactersSubscriber, EditRelicsSubscribe
         //Attacks
         BaseMod.addCard(new Bite_Glutton());
         BaseMod.addCard(new Borborygmi());
-        BaseMod.addCard(new Chomp());
         BaseMod.addCard(new Demolish());
         BaseMod.addCard(new Devour());
         BaseMod.addCard(new Feed_Glutton());
         BaseMod.addCard(new GnawingHunger());
         BaseMod.addCard(new KneeJerk());
+        BaseMod.addCard(new LashOut());
         BaseMod.addCard(new Slam());
         BaseMod.addCard(new Tantrum());
         //Skills
@@ -141,11 +141,11 @@ public class GluttonMod implements EditCharactersSubscriber, EditRelicsSubscribe
         //Attacks
         BaseMod.addCard(new BellySlam());
         BaseMod.addCard(new BloodyKnuckle());
+        BaseMod.addCard(new Chomp());
         BaseMod.addCard(new DecrepitStrike());
         BaseMod.addCard(new DistilledAgony());
         BaseMod.addCard(new Feast());
         BaseMod.addCard(new FeebleKick());
-        BaseMod.addCard(new LashOut());
         BaseMod.addCard(new Loot());
         BaseMod.addCard(new Mug());
         BaseMod.addCard(new Overreach());

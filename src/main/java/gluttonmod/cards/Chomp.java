@@ -19,7 +19,7 @@ public class Chomp extends AbstractGluttonCard {
     public static final String IMG_PATH = "cards/chomp.png";
 
     private static final CardType TYPE = CardType.ATTACK;
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
     private static final int COST = 3;
