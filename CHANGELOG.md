@@ -1,3 +1,7 @@
+# Version 1.0.8
+
+No more Ironclad Models
+
 # Version 1.0.7
 
 Bleed now renders like Posion in the health bar, letting you see how much damage will occur.

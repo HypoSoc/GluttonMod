@@ -60,7 +60,7 @@ public class GluttonCharacter extends CustomPlayer {
                 getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(ENERGY_PER_TURN));
 
         this.loadAnimation(GluttonMod.getResourcePath(SKELETON_ATLAS), GluttonMod.getResourcePath(SKELETON_JSON), 1.0f);
-        AnimationState.TrackEntry e = this.state.setAnimation(0, "animation", true);
+        AnimationState.TrackEntry e = this.state.setAnimation(0, "idle", true);
         e.setTime(e.getEndTime() * MathUtils.random());
     }
 
