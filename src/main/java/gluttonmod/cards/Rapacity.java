@@ -18,9 +18,9 @@ public class Rapacity extends AbstractGluttonCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int MAGIC = 10;
-    private static final int UPGRADE_BONUS = 2;
+    private static final int UPGRADE_BONUS = 5;
 
     public Rapacity()
     {
