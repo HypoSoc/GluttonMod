@@ -17,9 +17,12 @@ public class ClotPower extends AbstractGluttonPower {
             " turn.", " turns."};
     public static final String IMG = "powers/clot.png";
 
+    private static int clotIdOffset = 0;
+
     public ClotPower(AbstractCreature owner, int amount) {
         this.name = NAME;
-        this.ID = POWER_ID;
+        this.ID = (POWER_ID + clotIdOffset);
+        clotIdOffset += 1;
         this.owner = owner;
 
         this.img = new Texture(GluttonMod.getResourcePath(IMG));
@@ -45,9 +48,9 @@ public class ClotPower extends AbstractGluttonPower {
         flash();
         AbstractDungeon.actionManager.addToBottom(new HealAction(this.owner, this.owner, CLOT_HEAL));
         if (this.amount == 0) {
-            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "Glutton:Clot"));
+            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
         } else {
-            AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, "Glutton:Clot", 1));
+            AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, this.ID, 1));
         }
     }
 }

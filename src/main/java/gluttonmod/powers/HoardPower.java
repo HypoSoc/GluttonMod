@@ -19,18 +19,18 @@ public class HoardPower extends AbstractGluttonPower {
     public static final String IMG = "powers/hoard.png";
 
     private int gold;
-    private int originalAmount;
+    private static int hoardIdOffset = 0;
 
     public HoardPower(AbstractCreature owner, int amount, int gold) {
         this.name = NAME;
-        this.ID = POWER_ID;
+        this.ID = (POWER_ID + hoardIdOffset);
+        hoardIdOffset += 1;
         this.owner = owner;
 
         this.img = new Texture(GluttonMod.getResourcePath(IMG));
         this.type = PowerType.BUFF;
         this.amount = amount;
         this.gold = gold;
-        this.originalAmount = amount;
         this.updateDescription();
 
         this.isTurnBased = true;
@@ -51,9 +51,9 @@ public class HoardPower extends AbstractGluttonPower {
         flash();
         GluttonMod.logger.debug(this.amount);
         if (this.amount == 0) {
-            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "Glutton:Hoard"));
+            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
         } else {
-            AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, "Glutton:Hoard", 1));
+            AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, this.ID, 1));
         }
     }
 
@@ -65,14 +65,6 @@ public class HoardPower extends AbstractGluttonPower {
             for (int i = 0; i < this.gold; i++) {
                 AbstractDungeon.effectList.add(new GainPennyEffect(p, 0, 0, p.hb.cX, p.hb.cY, true));
             }
-        }
-
-        if(this.owner.hasPower("Glutton:Stockpile")){
-            AbstractPower stockpile = this.owner.getPower("Glutton:Stockpile");
-            stockpile.flash();
-            AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, "Glutton:Stockpile", 1));
-            AbstractDungeon.actionManager.addToBottom(
-                    new ApplyPowerAction(this.owner, this.owner, new HoardPower(this.owner, this.originalAmount, this.gold), this.originalAmount));
         }
     }
 }

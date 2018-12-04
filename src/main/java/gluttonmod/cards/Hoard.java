@@ -5,10 +5,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import gluttonmod.GluttonMod;
-import gluttonmod.powers.FeverVisionsPower;
 import gluttonmod.powers.HoardPower;
-import gluttonmod.powers.StockpilePower;
 
 public class Hoard extends AbstractGluttonCard
 {
@@ -37,14 +34,8 @@ public class Hoard extends AbstractGluttonCard
 
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        if(p.hasPower("Glutton:Hoard")){
-            AbstractDungeon.actionManager.addToBottom(
-                    new ApplyPowerAction(p, p, new StockpilePower(p, 1), 1));
-        }
-        else {
             AbstractDungeon.actionManager.addToBottom(
                     new ApplyPowerAction(p, p, new HoardPower(p, this.magicNumber, GOLD), this.magicNumber));
-        }
     }
 
     public AbstractCard makeCopy()
