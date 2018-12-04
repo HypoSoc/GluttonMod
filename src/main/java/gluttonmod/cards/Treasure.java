@@ -1,10 +1,11 @@
 package gluttonmod.cards;
 
-import com.megacrit.cardcrawl.actions.common.HealAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.GainPennyEffect;
 
 public class Treasure extends AbstractGluttonCard
 {
@@ -12,9 +13,9 @@ public class Treasure extends AbstractGluttonCard
 
     public static final String ID = "Treasure";
     public static final String NAME = "Treasure";
-    public static final String DESCRIPTION = "Heal !M! HP for every "
-            + EXCHANGE + " Gold you have. NL Exhaust.";
-    public static final String EXTENDED_DESCRIPTION[] = {" NL (Heal ", " HP.)"};
+    public static final String DESCRIPTION = "Gain !M! Gold. For each "
+            + EXCHANGE + " Gold you have, add a random rare card to your hand. They cost 0 this turn. Exhaust.";
+    public static final String EXTENDED_DESCRIPTION[] = {" NL (Add ", " card.)", " cards.)"};
     public static final String IMG_PATH = "cards/treasure.png";
 
     private static final CardType TYPE = CardType.SKILL;
@@ -22,8 +23,8 @@ public class Treasure extends AbstractGluttonCard
     private static final CardTarget TARGET = CardTarget.SELF;
 
     private static final int COST = 1;
-    private static final int MAGIC = 1;
-    private static final int UPGRADE_MAGIC_BONUS = 1;
+    private static final int MAGIC = 35;
+    private static final int UPGRADE_MAGIC_BONUS = 15;
 
     public Treasure()
     {
@@ -31,28 +32,65 @@ public class Treasure extends AbstractGluttonCard
 
         this.baseMagicNumber = MAGIC;
         this.magicNumber = this.baseMagicNumber;
-        this.tags.add(CardTags.HEALING);
         this.exhaust = true;
     }
 
     public void triggerWhenDrawn() {
-        int healAmount = AbstractDungeon.player.gold / EXCHANGE * this.magicNumber;
-        this.rawDescription = (DESCRIPTION + EXTENDED_DESCRIPTION[0] + healAmount + EXTENDED_DESCRIPTION[1]);
+        int createAmount = calculateGainAmount();
+        if(createAmount == 1) {
+            this.rawDescription = (DESCRIPTION + EXTENDED_DESCRIPTION[0] + createAmount + EXTENDED_DESCRIPTION[1]);
+        }
+        else {
+            this.rawDescription = (DESCRIPTION + EXTENDED_DESCRIPTION[0] + createAmount + EXTENDED_DESCRIPTION[2]);
+        }
         initializeDescription();
     }
 
     public void onChangeGold(int amount) {
-        int healAmount = AbstractDungeon.player.gold / EXCHANGE * this.magicNumber;
-        this.rawDescription = (DESCRIPTION + EXTENDED_DESCRIPTION[0] + healAmount + EXTENDED_DESCRIPTION[1]);
+        int createAmount = calculateGainAmount();
+        if(createAmount == 1) {
+            this.rawDescription = (DESCRIPTION + EXTENDED_DESCRIPTION[0] + createAmount + EXTENDED_DESCRIPTION[1]);
+        }
+        else {
+            this.rawDescription = (DESCRIPTION + EXTENDED_DESCRIPTION[0] + createAmount + EXTENDED_DESCRIPTION[2]);
+        }
         initializeDescription();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        int heal = p.gold / EXCHANGE * this.magicNumber;
-        AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, heal));
+        if(!p.hasRelic("Ectoplasm")) {
+            p.gainGold(this.magicNumber);
+            for (int i = 0; i < this.magicNumber; i++) {
+                AbstractDungeon.effectList.add(new GainPennyEffect(p, 0, 0, p.hb.cX, p.hb.cY, true));
+            }
+        }
+        int createAmount = p.gold / EXCHANGE;
+        for(int i=0; i<createAmount; i++){
+            AbstractCard c =
+                    AbstractDungeon.getCard(AbstractCard.CardRarity.RARE, AbstractDungeon.cardRandomRng);
+            while(c.cardID.equals("Glutton:Treasure")){
+                c = AbstractDungeon.getCard(AbstractCard.CardRarity.RARE, AbstractDungeon.cardRandomRng);
+            }
+            c = c.makeCopy();
+            c.setCostForTurn(0);
+            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c,1, false));
+        }
         this.rawDescription = DESCRIPTION;
         initializeDescription();
+    }
+
+    private int calculateGainAmount() {
+        AbstractPlayer p = AbstractDungeon.player;
+        int gold = p.gold;
+        if(!p.hasRelic("Ectoplasm")) {
+            int gain = magicNumber;
+            if(p.hasRelic("Glutton:LuckySock")){
+                gain += (gain/4);
+            }
+            gold += gain;
+        }
+        return gold / EXCHANGE;
     }
 
     public AbstractCard makeCopy()

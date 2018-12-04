@@ -21,9 +21,9 @@ public class Chrysosphagy extends AbstractGluttonCard
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    private static final int COST = 2;
-    private static final int UPGRADE_COST = 1;
+    private static final int COST = 1;
     private static final int MAGIC = 20;
+    private static final int UPGRADE_MAGIC_BONUS = 10;
 
     public Chrysosphagy()
     {
@@ -31,6 +31,7 @@ public class Chrysosphagy extends AbstractGluttonCard
 
         this.baseMagicNumber = MAGIC;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(CardTags.HEALING);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -61,7 +62,7 @@ public class Chrysosphagy extends AbstractGluttonCard
         if (!this.upgraded)
         {
             upgradeName();
-            upgradeBaseCost(UPGRADE_COST);
+            upgradeMagicNumber(UPGRADE_MAGIC_BONUS);
         }
     }
 }
