@@ -24,7 +24,7 @@ public class GnawingHunger extends AbstractGluttonCard
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
     private static final int COST = 1;
-    private static final int MORE_DAMAGE = 1;
+    private static final int MORE_DAMAGE = 4;
     private static final int INITIAL_MAGIC = 1;
     private static final int INCREASE = 1;
 
