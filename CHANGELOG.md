@@ -1,3 +1,13 @@
+# Version 1.0.9
+
+General Buffs to Gold-Related Cards: Treasure completely reworked. Profligacy now grants Block. Chrysosphagy costs 1 at base and upgrades to heal more. Rapacity costs 0 and gives more gold on upgrade.
+
+Both Hoard and Thrombosis now stack with themselves better. They act like The Bomb, where countdowns work in parallel, rather than sequentially.
+
+Yearn now works on empty decks.
+
+Gnawing Hunger has been buffed.
+
 # Version 1.0.8
 
 No more Ironclad Models
