@@ -53,6 +53,13 @@ public class GnawingHunger extends AbstractGluttonCard
         return new GnawingHunger();
     }
 
+    public void applyPowers() {
+        this.baseDamage = this.misc * 2 + MORE_DAMAGE;
+        this.baseMagicNumber = this.misc;
+        super.applyPowers();
+        this.initializeDescription();
+    }
+
     public void upgrade()
     {
         if (!this.upgraded)
