@@ -23,8 +23,8 @@ public class LashOut extends AbstractGluttonCard {
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
     private static final int COST = 1;
-    private static final int POWER = 10;
-    private static final int UPGRADE_POWER_BONUS = 2;
+    private static final int POWER = 8;
+    private static final int UPGRADE_POWER_BONUS = 3;
 
     public LashOut()
     {
