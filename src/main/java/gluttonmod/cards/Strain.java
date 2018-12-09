@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 public class Strain extends AbstractGluttonCard {
     public static final String ID = "Strain";
     public static final String NAME = "Strain";
-    public static final String DESCRIPTION = "Deal !D! damage. Gain !M! Weak for yourself.";
+    public static final String DESCRIPTION = "Deal !D! damage. Gain !M! Weak.";
     public static final String IMG_PATH = "cards/strain.png";
 
     private static final CardType TYPE = CardType.ATTACK;

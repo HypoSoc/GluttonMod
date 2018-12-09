@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.powers.VulnerablePower;
 public class Overreach extends AbstractGluttonCard {
     public static final String ID = "Overreach";
     public static final String NAME = "Overreach";
-    public static final String DESCRIPTION = "Deal !D! damage. Gain !M! Vulnerable for yourself.";
+    public static final String DESCRIPTION = "Deal !D! damage. Gain !M! Vulnerable.";
     public static final String IMG_PATH = "cards/overreach.png";
 
     private static final CardType TYPE = CardType.ATTACK;
