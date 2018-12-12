@@ -15,8 +15,8 @@ public class GnawingHunger extends AbstractGluttonCard
 {
     public static final String ID = "GnawingHunger";
     public static final String NAME = "Gnawing Hunger";
-    public static final String DESCRIPTION = "Lose !M! HP. Deal !D! damage. When played, permanently increase the damage by 2 and HP loss by 1. Exhaust.";
-    public static final String UPGRADED_DESCRIPTION = "Lose !M! HP. Deal !D! damage. When played, permanently increase the damage by 2 and HP loss by 1.";
+    public static final String DESCRIPTION = "Lose !M! HP. Deal !D! damage. When played, permanently increase the damage by 2. Exhaust.";
+    public static final String UPGRADED_DESCRIPTION = "Lose !M! HP. Deal !D! damage. When played, permanently increase the damage by 2.";
     public static final String IMG_PATH = "cards/gnawinghunger.png";
 
     private static final CardType TYPE = CardType.ATTACK;
@@ -25,15 +25,15 @@ public class GnawingHunger extends AbstractGluttonCard
 
     private static final int COST = 1;
     private static final int MORE_DAMAGE = 4;
-    private static final int INITIAL_MAGIC = 1;
+    private static final int MAGIC = 7;
     private static final int INCREASE = 1;
 
     public GnawingHunger()
     {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 
-        this.misc = INITIAL_MAGIC;
-        this.baseMagicNumber = this.misc;
+        this.misc = 1;
+        this.baseMagicNumber = MAGIC;
         this.baseDamage = this.misc * 2 + MORE_DAMAGE;
         this.magicNumber = this.baseMagicNumber;
 
@@ -55,7 +55,6 @@ public class GnawingHunger extends AbstractGluttonCard
 
     public void applyPowers() {
         this.baseDamage = this.misc * 2 + MORE_DAMAGE;
-        this.baseMagicNumber = this.misc;
         super.applyPowers();
         this.initializeDescription();
     }

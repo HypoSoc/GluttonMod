@@ -30,7 +30,7 @@ public class GnawingHungerAction
                 c.misc += this.miscIncrease;
                 c.applyPowers();
                 c.baseDamage = c.misc * 2 + moreDamage;
-                c.baseMagicNumber = c.misc;
+                //c.baseMagicNumber = c.misc;
             }
         }
         for (AbstractCard c : GetAllInBattleInstances.get(this.uuid))
@@ -38,7 +38,7 @@ public class GnawingHungerAction
             c.misc += this.miscIncrease;
             c.applyPowers();
             c.baseDamage = c.misc * 2 + moreDamage;
-            c.baseMagicNumber = c.misc;
+            //c.baseMagicNumber = c.misc;
         }
         this.isDone = true;
     }
