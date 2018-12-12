@@ -16,7 +16,7 @@ public class Profligacy extends AbstractGluttonCard
 
     public static final String ID = "Profligacy";
     public static final String NAME = "Profligacy";
-    public static final String DESCRIPTION = "Pay " + PRICE + " Gold. NL Deal !D! damage. NL Gain !B! block.";
+    public static final String DESCRIPTION = "Pay " + PRICE + " Gold. NL Deal !D! damage. NL Gain !B! Block.";
     public static final String CANT_PLAY = "I can't afford this card.";
     public static final String IMG_PATH = "cards/profligacy.png";
 
