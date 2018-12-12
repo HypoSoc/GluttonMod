@@ -15,7 +15,7 @@ public class BloodyKnuckle extends AbstractGluttonCard
 {
     public static final String ID = "BloodyKnuckle";
     public static final String NAME = "Bloody Knuckle";
-    public static final String DESCRIPTION = "Give an enemy Thorns. Deal !D! damage !M! times.";
+    public static final String DESCRIPTION = "Give an enemy 1 Thorns. Deal !D! damage !M! times.";
     public static final String IMG_PATH = "cards/bloodyknuckle.png";
 
     private static final CardType TYPE = CardType.ATTACK;

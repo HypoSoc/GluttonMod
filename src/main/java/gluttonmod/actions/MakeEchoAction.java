@@ -1,5 +1,6 @@
 package gluttonmod.actions;
 
+import basemod.BaseMod;
 import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -59,10 +60,10 @@ public class MakeEchoAction extends AbstractGameAction {
         }
         int discardAmount = 0;
         int handAmount = this.amount;
-        if (this.amount + AbstractDungeon.player.hand.size() > 10)
+        if (this.amount + AbstractDungeon.player.hand.size() > BaseMod.MAX_HAND_SIZE)
         {
             AbstractDungeon.player.createHandIsFullDialog();
-            discardAmount = this.amount + AbstractDungeon.player.hand.size() - 10;
+            discardAmount = this.amount + AbstractDungeon.player.hand.size() - BaseMod.MAX_HAND_SIZE;
             handAmount -= discardAmount;
         }
         addToHand(handAmount);
