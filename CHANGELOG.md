@@ -1,3 +1,11 @@
+# Version 1.0.10
+
+General wording changes.
+
+Reworked Gnawing Hunger. Still a bad card, but not worthless anymore.
+
+Fixed the interaction between creating echoes and altered max hand sizes.
+
 # Version 1.0.9
 
 General Buffs to Gold-Related Cards: Treasure completely reworked. Profligacy now grants Block. Chrysosphagy costs 1 at base and upgrades to heal more. Rapacity costs 0 and gives more gold on upgrade.
