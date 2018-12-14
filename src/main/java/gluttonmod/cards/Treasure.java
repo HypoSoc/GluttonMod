@@ -46,6 +46,17 @@ public class Treasure extends AbstractGluttonCard
         initializeDescription();
     }
 
+    public void onEchoed() {
+        int createAmount = calculateGainAmount();
+        if(createAmount == 1) {
+            this.rawDescription = (DESCRIPTION + EXTENDED_DESCRIPTION[0] + createAmount + EXTENDED_DESCRIPTION[1]);
+        }
+        else {
+            this.rawDescription = (DESCRIPTION + EXTENDED_DESCRIPTION[0] + createAmount + EXTENDED_DESCRIPTION[2]);
+        }
+        initializeDescription();
+    }
+
     public void onChangeGold(int amount) {
         int createAmount = calculateGainAmount();
         if(createAmount == 1) {

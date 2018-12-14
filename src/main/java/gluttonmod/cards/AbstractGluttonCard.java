@@ -11,6 +11,7 @@ public abstract class AbstractGluttonCard extends CustomCard {
                 AbstractCardEnum.GLUTTON, rarity, target);
     }
 
-    public void onChangeGold(int amount) {};
-    public void onLoseGoldFromCard(int gold) {};
+    public void onChangeGold(int amount) {}
+    public void onLoseGoldFromCard(int gold) {}
+    public void onEchoed() {}
 }

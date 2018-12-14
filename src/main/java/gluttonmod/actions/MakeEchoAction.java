@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDiscardEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
+import gluttonmod.cards.AbstractGluttonCard;
 
 public class MakeEchoAction extends AbstractGameAction {
     private static final float DURATION_PER_CARD = 0.35F;
@@ -48,6 +49,9 @@ public class MakeEchoAction extends AbstractGameAction {
         card.retain = false;
         if(card.cost >= 0 && this.discount>0)
             card.updateCost(-1*this.discount);
+        if(card instanceof AbstractGluttonCard){
+            ((AbstractGluttonCard) card).onEchoed();
+        }
         return card;
     }
 
