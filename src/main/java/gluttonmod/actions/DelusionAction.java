@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class DelusionAction extends AbstractGameAction {
     private AbstractPlayer p;
-    private static String[] TEXT = {"Choose a card to Echo."};
+    private static String[] TEXT = {"Echo."};
     private ArrayList<AbstractCard> etherealCards = new ArrayList();
 
     public DelusionAction(AbstractPlayer p, int amount){
@@ -44,7 +44,7 @@ public class DelusionAction extends AbstractGameAction {
             this.p.hand.group.removeAll(this.etherealCards);
             if (this.p.hand.group.size() > 1)
             {
-                AbstractDungeon.handCardSelectScreen.open(TEXT[0], 1, false, false, false, true);
+                AbstractDungeon.handCardSelectScreen.open(TEXT[0], 1, false, false, false, false);
                 tickDuration();
                 return;
             }
