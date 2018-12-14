@@ -1,3 +1,9 @@
+# Version 1.1.0
+
+Fixed UI issues with Delusion.
+
+Echoes of Treasure now show how many cards they make.
+
 # Version 1.0.10
 
 General wording changes.
